@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>This is html</h2>
+
+<p id="my_paragraph">I identify as a appachi helicopter</p>
+
+<button onclick="changeStyle()">Click Me</button>
+
+<hr>
+<p>This button counts when you click it</p>
+<button onclick="addCounter()" id="counter_button">0</button>
+<input id="my_input"> 
+<button id="input_button" onclick="inputButton()">Click me</button> 
+<hr>
+<hr>
+<p>Whats the secret password</p>
+<input id="my_input">
+<button id="secretPassword" onclick="secretButton()">Click me</button>
+</hr>
+
+    <script> lang="js"
+         console.log("hello world")
+
+         document.write("<h1>This is javasctipy</h1>")
+         document.write("You are not weldcome here.")
+         let myParagraph= document.getElementById("my_paragraph")
+
+         function inputButton () {
+            let myInput = document.getElementById("my_input")
+
+            console.log(myInput.value)
+         }
+         
+
+        function changeStyle () {
+            let myParagraph = document.getElementById("my_paragraph")
+            myParagraph.innerHTML = 'This was modified by Javascript'
+            myParagraph.style = 'background: blue; color: orange'
+            alert("You clicked a button!")
+        }
+
+        let counter = 0
+    
+        function addCounter () {
+            counter = counter + 1
+            let counterButton = document.getElementById("counter_button")
+            counterButton.innerHTML = counter
+        }
+       
+        function secretButton () {
+            let secretPassword = document.getElementById(secretPassword) 
+
+            window.location = 'https://youtube.com'
+        }
+
+    </script>
+</body>
+</html>
