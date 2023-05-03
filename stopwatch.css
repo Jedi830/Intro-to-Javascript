@@ -13,9 +13,10 @@ button {
 h1,h2 {
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
-
+    color: aquamarine;
 }
 button:disabled {
     background-color: grey;
     cursor: not-allowed;
+    
 }

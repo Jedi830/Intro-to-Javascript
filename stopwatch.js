@@ -50,8 +50,8 @@ function reset () {
     seconds = 0
     minutes = 0
     digits.innerHTML = String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0') + ':' + String(milliseconds).padStart(2, 0)
-    
-    const myList = document.getElementById('mylist')
+
+    const myList = document.getElementById('jList')
     myList.innerHTML = ""
  
     
